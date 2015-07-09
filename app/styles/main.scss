@@ -120,6 +120,12 @@ a {
       margin-right: 50px;
     }
 
+    &.mobile {
+      img {
+        width: 320px;
+      }
+    }
+
   }
 
   .logos {
