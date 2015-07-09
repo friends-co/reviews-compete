@@ -11,10 +11,6 @@ $( document ).ready(function() {
 
         var total = ((imgNum * imgWidth) + (imgNum * 50)) + 50;
 
-        console.log(imgNum);
-        console.log(imgWidth);
-        console.log(total);
-
         $('.framebody .images').css('width', total);
 
     }
