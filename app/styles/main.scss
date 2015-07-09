@@ -139,7 +139,7 @@ a {
     }
   }
 
-  .logos {
+  .logos200 {
     margin-top: 75px;
 
     img {
@@ -150,7 +150,7 @@ a {
     }
   }
 
-  .logos-50 {
+  .logos400 {
     margin-top: 75px;
 
     img {
@@ -158,6 +158,17 @@ a {
       height: auto;
       margin: 0 50px 50px 0;
       width: 400px;
+    }
+  }
+
+  .logos80 {
+    margin-top: 75px;
+
+    img {
+      float :left;
+      height: auto;
+      margin: 0 50px 50px 0;
+      width: 80vw;
     }
   }
 
