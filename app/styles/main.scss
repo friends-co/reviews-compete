@@ -1,6 +1,8 @@
 // bower:scss
 // endbower
 
+@import "bourbon";
+
 
 html, body {
   margin: 0;
@@ -9,7 +11,7 @@ html, body {
 
 body {
   background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Gotham, "Proxima Nova", sans-serif;
   color: #333;
 }
 
@@ -22,6 +24,7 @@ body {
   background-color: #eee;
   border-radius: 6px;
   padding: 60px;
+
   h1 {
     font-size: 60px;
     line-height: 1;
@@ -36,16 +39,33 @@ body {
   padding: 0.2em 0;
 }
 
+a {
+  @include transition(all .3s ease);
+  border-bottom: 1px solid white;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid transparent;
+    
+  }
+}
+
 .sitenav {
   background: rgba(47,132,152,0.9);
   position: fixed;
   height: 100%;
   width: 250px;
 
+  p {
+    color: white;
+    padding: 20px;
+  }
+
   ol {
     li {
       color: white;
-      
+      margin-bottom: 10px;
+
       a {
         color: white;
       }
@@ -57,4 +77,13 @@ body {
   border: none;
   margin-left: 250px;
   width: 100%;
+}
+
+.framebody {
+  color: #552275;
+  padding: 20px;
+
+  h1 {
+    margin-top: 15px;
+  }
 }
