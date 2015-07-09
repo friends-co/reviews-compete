@@ -49,17 +49,17 @@ body {
 
 a {
   @include transition(all .3s ease);
-  border-bottom: 1px solid white;
   text-decoration: none;
+  color:#fff;
 
   &:hover {
-    border-bottom: 1px solid transparent;
+    color:#666;
     
   }
 }
 
 .sitenav {
-  background: rgba(47,132,152,0.9);
+  background: #000;
   position: fixed;
   height: 100%;
   width: 250px;
@@ -78,16 +78,15 @@ a {
     color: white;
     margin-top: 0;
     padding: 20px;
+    line-height:22px;
+    font-size:14px;
   }
 
   ol {
     li {
       color: white;
       margin-bottom: 10px;
-
-      a {
-        color: white;
-      }
+      font-size:14px;
     }
   }
 }
