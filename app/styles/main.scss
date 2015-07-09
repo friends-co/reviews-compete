@@ -105,7 +105,7 @@ a {
 .framebody {
   color: #552275;
   overflow-x: scroll;
-  padding: 20px;
+  padding: 20px 35px;
 
   h1 {
     font-size: 24px;
@@ -121,6 +121,17 @@ a {
       margin-right: 50px;
     }
 
+  }
+
+  .logos {
+    margin-top: 75px;
+
+    img {
+      float :left;
+      height: auto;
+      margin: 0 50px 50px 0;
+      width: 200px;
+    }
   }
 
 }

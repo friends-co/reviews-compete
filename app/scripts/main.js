@@ -4,7 +4,7 @@
 
 $( document ).ready(function() {
 
-    if ($("body").hasClass('intro') == false) {
+    if ($('body').hasClass('intro logos') === false) {
 
         var imgWidth = $('.framebody .images img:nth-child(2)').width();
         var imgNum = $('.framebody .images img').length + 1;
@@ -15,7 +15,7 @@ $( document ).ready(function() {
         console.log(imgWidth);
         console.log(total);
 
-        $(".framebody .images").css('width', total);
+        $('.framebody .images').css('width', total);
 
     }
 
