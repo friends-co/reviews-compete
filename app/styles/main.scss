@@ -3,6 +3,13 @@
 
 @import "bourbon";
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 
 html, body {
   margin: 0;
@@ -13,6 +20,7 @@ body {
   background: #fafafa;
   font-family: Gotham, "Proxima Nova", sans-serif;
   color: #333;
+  overflow-x: hidden;
 }
 
 .hero-unit {
@@ -55,6 +63,10 @@ a {
   position: fixed;
   height: 100%;
   width: 250px;
+  -webkit-box-shadow: 10px 0px 50px -6px rgba(0,0,0,0.35);
+  -moz-box-shadow: 10px 0px 50px -6px rgba(0,0,0,0.35);
+  box-shadow: 10px 0px 50px -6px rgba(0,0,0,0.35);
+  z-index: 2;
 
   p {
     color: white;
@@ -74,16 +86,41 @@ a {
 }
 
 .content-frame {
+  @include calc(width, "100% - 250px");
   border: none;
-  margin-left: 250px;
-  width: 100%;
+  height: 100%;
+  left: 250px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 .framebody {
   color: #552275;
+  overflow-x: scroll;
   padding: 20px;
 
   h1 {
     margin-top: 15px;
+  }
+
+  .images {
+    width: 50000px;
+
+    img {
+      float: left;
+      width: 80vw;
+      margin-right: 50px;
+    }
+
+  }
+
+}
+
+body.intro {
+  width: 100% !important;
+
+  p {
+    font-size: 24px;
   }
 }
